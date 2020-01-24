@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import Nav from '../../components/Nav';
 
 const Episodes = () => {
     const [podcastRSS, setPodcastRSS] = useState([])
@@ -19,8 +20,8 @@ const Episodes = () => {
                 podcastRSS.push({
                     episode: x[i].children[0].textContent,
                     description: x[i].children[1].textContent,
-                    link: x[i].children[2].textContent,
-                    image: x[i].children[10].attributes[0].value
+                    link: x[i].children[2].textContent + '/embed',
+                    image: x[i].children[10].attributes[0].value 
                 })
             }
             console.log(xmlDoc)
@@ -31,7 +32,26 @@ const Episodes = () => {
     }
 
     return(
-        <h1>Episodes</h1>
+        <>
+        <div style={{flex:1}}>
+        <Nav />
+        </div>
+        <div style={{flex:1, position:'relative',marginTop:'5%'}}>
+        {podcastRSS.map((player, i) => (
+            <iframe 
+                key={i}
+                title={player.title}
+                // width="360" 
+                // height="115" 
+                src={player.link}
+                frameBorder="0" 
+                scrolling="no"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+            </iframe>
+        ))}
+        </div>
+        </>
     )
 }
 

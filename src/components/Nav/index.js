@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-// import './styling.css'
+import './styling.css'
 
 export default class NavBar extends React.Component {  
   render() {

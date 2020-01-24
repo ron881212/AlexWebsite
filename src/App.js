@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Switch, HashRouter } from "react-router-dom";
-import Nav from './components/Nav';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
@@ -10,7 +9,6 @@ import './App.css';
 function App() {
   return (
     <HashRouter basename='/AlexWebsite'>
-      <Nav />
         <Switch>
           <Route exact path="/" component={Episodes} />
           <Route exact path="/About" component={About} />
