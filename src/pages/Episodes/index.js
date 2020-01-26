@@ -21,6 +21,8 @@ const Episodes = () => {
                 // 'Content-Type': 'application/x-www-form-urlencoded',
               },
         }
+        ).catch(error =>
+            console.log("error", error)
         )
         // let podcastArr = []
         // let youTubeArr = []
