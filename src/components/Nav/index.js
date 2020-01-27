@@ -8,11 +8,12 @@ export default class NavBar extends React.Component {
     // const darkBar = "navbar navbar-expand-lg navbar-dark nav-style fixed-top"
     return (
       <nav 
-        className={lightBar}
+        className={lightBar} 
+        style={{backgroundColor:'#128997'}}
         // style={this.props.bgcolor ? {backgroundColor: "black"} : {backgroundColor: "white"}}
       >
         <div className='container'>
-          <a className="navbar-brand" href="#"
+          <a className="navbar-brand myName" href="#"
           style={{color:'black'}}> 
           Alex Clemetine
           </a>

@@ -8,6 +8,7 @@ import './App.css';
 
 function App() {
   return (
+    <>
     <HashRouter basename='/AlexWebsite'>
         <Switch>
           <Route exact path="/" component={Episodes} />
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/Contact" component={Contact} />
         </Switch>
     </HashRouter>
+    </>
   );
 }
 
