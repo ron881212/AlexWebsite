@@ -5,11 +5,7 @@ import './styles.css'
 
 const Hero = (props) => {
   return (
-      // <Jumbotron fluid>
-      //   <Container fluid>
-            <img className="img-fluid" alt="Collectively-image" src={promo} />
-      //   </Container>
-      // </Jumbotron>
+      <img className="img-fluid w-100 mt-5" alt="Collectively-image" src={promo} />
   );
 };
 

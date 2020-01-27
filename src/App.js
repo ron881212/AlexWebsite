@@ -12,6 +12,7 @@ function App() {
     <HashRouter basename='/AlexWebsite'>
         <Switch>
           <Route exact path="/" component={Episodes} />
+          <Route exact path="/AlexWebsite" component={Episodes} />
           <Route exact path="/About" component={About} />
           <Route exact path="/Blog" component={Blog} />
           <Route exact path="/Contact" component={Contact} />

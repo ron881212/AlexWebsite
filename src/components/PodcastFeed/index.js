@@ -3,9 +3,9 @@ import React, {useEffect, useState} from 'react';
 const PodcastFeed = () => {
     const [podcastRSS, setPodcastRSS] = useState([])
 
-    // useEffect( () => {
-    //     getPodcast()  
-    // },[] )
+    useEffect( () => {
+        getPodcast()  
+    },[] )
 
      const getPodcast = async () => {
         const myPodcast = await fetch('https://anchor.fm/s/92b5e90/podcast/rss')
@@ -33,7 +33,7 @@ const PodcastFeed = () => {
 
         return (
             <div style={sytles.podParent}>
-            <h4>Collectively Podcast</h4>
+            <h4 className='ml-5 mt-3'>Collectively Podcast</h4>
             <div style={sytles.podcast}>
             {podcastRSS.map((player, i) => (
                 <iframe 

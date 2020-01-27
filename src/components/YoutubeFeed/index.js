@@ -3,9 +3,9 @@ import React, {useEffect, useState} from 'react'
 const YouFeed = () => {
     const [youTubeRSS, setYouTubeRSS] = useState([])
 
-    // useEffect( () => {
-    //     getYouTube()  
-    // },[] )
+    useEffect( () => {
+        getYouTube()  
+    },[] )
 
     // cors-anywhere.herokuapp.com/
     const getYouTube = async () => {
@@ -47,7 +47,7 @@ const YouFeed = () => {
 
     return(
         <div style={sytles.uParent}>
-        <h4>Watch Now</h4>
+        <h4 className='ml-5 mt-3'>Watch Now</h4>
         <div style={sytles.youtube}>
         {/* youTube episodes */}
         {youTubeRSS.map((tube, i) => (
