@@ -2,10 +2,11 @@ import React, {useEffect, useState} from 'react';
 
 const PodcastFeed = () => {
     const [podcastRSS, setPodcastRSS] = useState([])
+    const [completedPod, setCompletedPod] = useState(false)
 
-    useEffect( () => {
-        getPodcast()  
-    },[] )
+    // useEffect( () => {
+    //     getPodcast()  
+    // },[] )
 
      const getPodcast = async () => {
         const myPodcast = await fetch('https://anchor.fm/s/92b5e90/podcast/rss')
@@ -26,7 +27,7 @@ const PodcastFeed = () => {
                     // image: x[i].children[10].attributes[0].value 
                 })
             }
-            
+            setCompletedPod(!completedPod)
         }).catch(err => console.log(err))
     }
     
@@ -35,7 +36,9 @@ const PodcastFeed = () => {
             <div style={sytles.podParent}>
             <h4 className='ml-5 mt-3'>Collectively Podcast</h4>
             <div style={sytles.podcast}>
-            {podcastRSS.map((player, i) => (
+
+            {   completedPod ?
+                podcastRSS.map((player, i) => (
                 <iframe 
                     key={i}
                     title={player.episode}
@@ -47,7 +50,10 @@ const PodcastFeed = () => {
                     allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
                     allowFullScreen>
                 </iframe>
-            ))}
+            ))
+            :
+                null
+            }
             </div>
             </div>
         )

@@ -2,10 +2,11 @@ import React, {useEffect, useState} from 'react'
 
 const YouFeed = () => {
     const [youTubeRSS, setYouTubeRSS] = useState([])
+    const [completedTube, setCompletedTube] = useState(false)
 
-    useEffect( () => {
-        getYouTube()  
-    },[] )
+    // useEffect( () => {
+    //     getYouTube()  
+    // },[] )
 
     // cors-anywhere.herokuapp.com/
     const getYouTube = async () => {
@@ -38,11 +39,11 @@ const YouFeed = () => {
                     // image: x[i].children[10].attributes[0].value 
                 })
             }
+            setCompletedTube(!completedTube)
             // console.log('youtube xml=> ',xmlDoc02)
             // console.log('youtube entry=> ',y)
             // console.log('youTubeRSS.JSON() = ',youTubeRSS)
         }).catch(err => console.log(err))
-
     }
 
     return(
@@ -50,7 +51,9 @@ const YouFeed = () => {
         <h4 className='ml-5 mt-3'>Watch Now</h4>
         <div style={sytles.youtube}>
         {/* youTube episodes */}
-        {youTubeRSS.map((tube, i) => (
+
+        {   completedTube ?
+            youTubeRSS.map((tube, i) => (
             <iframe 
                 key={i}
                 title={tube.title}
@@ -62,7 +65,10 @@ const YouFeed = () => {
                 allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen>
             </iframe>
-        ))}
+        ))
+            :
+            null
+        }
         </div>
         </div>
     )
