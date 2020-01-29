@@ -9,7 +9,7 @@ export default class NavBar extends React.Component {
     return (
       <nav 
         className={lightBar} 
-        style={{backgroundColor:'#128997'}}
+        style={{backgroundColor:'#128997',borderBottomColor:'#128997'}}
         // style={this.props.bgcolor ? {backgroundColor: "black"} : {backgroundColor: "white"}}
       >
         <div className='container'>
