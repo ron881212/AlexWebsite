@@ -8,7 +8,7 @@ import { render } from '@testing-library/react'
 class About extends React.Component {
 
     componentWillMount(){
-        document.body.style.backgroundColor = "blueviolet";
+        document.body.style.backgroundColor = "#660850";
     }
     
     componentWillUnmount(){
@@ -21,7 +21,7 @@ class About extends React.Component {
         <>
         <Nav />
         <div style={{
-            backgroundColor:'blueviolet',
+            backgroundColor:'#660850',
             display:'flex',
             flexDirection:'row',
             flexFlow: 'row wrap',
@@ -44,7 +44,7 @@ class About extends React.Component {
                 src={aboutme} />
             <p 
             className="mx-5" 
-            style={{display:'flex', fontSize:45, width:'40%',flexGrow:2}}>
+            style={{display:'flex', fontSize:45, width:'40%',flexGrow:2,color:'#f4f4f4'}}>
             My name is Alex and I love discussing crime and television! I make videos every week that review and analyze my favorite films and TV shows with a focus on women, scifi, LGBTQ, and the black community. I also post videos that discuss crime, culture, and vlog sometimes!
             </p>
         </div>
