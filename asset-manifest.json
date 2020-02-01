@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/AlexWebsite/static/css/main.1da6b17f.chunk.css",
+    "main.js": "/AlexWebsite/static/js/main.949b71e4.chunk.js",
+    "main.js.map": "/AlexWebsite/static/js/main.949b71e4.chunk.js.map",
+    "runtime-main.js": "/AlexWebsite/static/js/runtime-main.02578803.js",
+    "runtime-main.js.map": "/AlexWebsite/static/js/runtime-main.02578803.js.map",
+    "static/css/2.17e5ed98.chunk.css": "/AlexWebsite/static/css/2.17e5ed98.chunk.css",
+    "static/js/2.58790897.chunk.js": "/AlexWebsite/static/js/2.58790897.chunk.js",
+    "static/js/2.58790897.chunk.js.map": "/AlexWebsite/static/js/2.58790897.chunk.js.map",
+    "index.html": "/AlexWebsite/index.html",
+    "precache-manifest.798b5f55576da731d56279b24ab6d74b.js": "/AlexWebsite/precache-manifest.798b5f55576da731d56279b24ab6d74b.js",
+    "service-worker.js": "/AlexWebsite/service-worker.js",
+    "static/css/2.17e5ed98.chunk.css.map": "/AlexWebsite/static/css/2.17e5ed98.chunk.css.map",
+    "static/css/main.1da6b17f.chunk.css.map": "/AlexWebsite/static/css/main.1da6b17f.chunk.css.map",
+    "static/js/2.58790897.chunk.js.LICENSE": "/AlexWebsite/static/js/2.58790897.chunk.js.LICENSE",
+    "static/media/aboutPic.jpeg": "/AlexWebsite/static/media/aboutPic.789dbfa9.jpeg",
+    "static/media/areYouDown.jpeg": "/AlexWebsite/static/media/areYouDown.37ccdfeb.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.02578803.js",
+    "static/css/2.17e5ed98.chunk.css",
+    "static/js/2.58790897.chunk.js",
+    "static/css/main.1da6b17f.chunk.css",
+    "static/js/main.949b71e4.chunk.js"
+  ]
+}
