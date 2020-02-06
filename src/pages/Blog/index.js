@@ -36,7 +36,7 @@ const Blog = (props) => {
     <div>
         <button onClick={()=>setAddBlog(!addBlog)} 
             style={{position: 'relative',backgroundColor:'#ff6e00'}} type="button" className="rounded-circle dark-btn d-flex justify-content-center btn-sm">
-            <img src={blogger}/>
+            <img src={blogger} style={{width:'50px', height:'50px'}}/>
         </button>
     </div>
     :

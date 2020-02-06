@@ -14,8 +14,8 @@ export default class NavBar extends React.Component {
       >
         <div className='container'>
           <a className="navbar-brand myName" href="#"
-          style={{color:'black'}}> 
-          Alex Clemetine
+          style={{color:'black',fontSize:'20px'}}> 
+          Alex Clementine
           </a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
